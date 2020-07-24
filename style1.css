@@ -1,0 +1,32 @@
+img {
+    width: 150px;
+
+    cursor: pointer;
+        display: block;
+    position: relative;
+
+}
+.ani {
+    top: 100px;
+    left: 45%;
+}
+
+@keyframes ani {
+    50% {
+         top: 90px; 
+    }
+    100% {
+         top: 100px; 
+    }
+}
+.ani:hover {
+  animation: ani 1s linear;
+   animation-iteration-count: 1;
+    -webkit-animation: ani 1s linear;
+    -moz-animation: ani 1s linear;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+}
+.ani:active {
+    transform: scale(1.1);
+}
